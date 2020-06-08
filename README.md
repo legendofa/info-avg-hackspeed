@@ -6,6 +6,10 @@
 
 Credit to: https://github.com/polybar/polybar-scripts/tree/master/polybar-scripts/info-hackspeed
 
+#### Setup
+
+Change `KEYBOARD_ID` to your specific device. List all devices using `xinput list`
+
 #### Module
 
 ```ini

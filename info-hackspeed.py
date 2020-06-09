@@ -1,11 +1,9 @@
 #!/usr/bin/python
 
-import subprocess
-import time
-import statistics
+import subprocess, time, statistics
 
 proc = subprocess.Popen(
-	"~/polybar-scripts/info-hackspeed.sh", shell=True, stdout=subprocess.PIPE
+	"~/.config/polybar/scripts/info-avg-hackspeed/info-hackspeed.sh", shell=True, stdout=subprocess.PIPE
 )
 
 value_list = []

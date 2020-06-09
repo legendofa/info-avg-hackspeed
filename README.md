@@ -8,13 +8,21 @@ Credit to: https://github.com/polybar/polybar-scripts/tree/master/polybar-script
 
 #### Setup
 
-Change `KEYBOARD_ID` to your specific device. List all devices using `xinput list`
+Change `KEYBOARD_ID` to your specific device. List all devices using `xinput list`.
+
+Adapt to your location of the script.
+
+```python
+proc = subprocess.Popen(
+	"~/.config/polybar/scripts/info-avg-hackspeed/info-hackspeed.sh", shell=True, stdout=subprocess.PIPE
+)
+```
 
 #### Module
 
 ```ini
 [module/info-avg-hackspeed]
 type = custom/script
-exec = ~/polybar-config/info-hackspeed.py
+exec = LOCATION
 tail = true
 ```
